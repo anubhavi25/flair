@@ -7,14 +7,6 @@ from .base import (
     StringDataset,
 )
 
-from .knowledgebase import (
-    CTD_CHEMICALS_DICTIONARY,
-    CTD_DISEASES_DICTIONARY,
-    NCBI_GENE_HUMAN_DICTIONARY,
-    NCBI_TAXONOMY_DICTIONARY,
-)
-
-
 # Expose all biomedical data sets used for the evaluation of BioBERT
 # -
 # -
@@ -154,6 +146,14 @@ from .entity_linking import (
     WSD_UFSAC,
     WSD_WORDNET_GLOSS_TAGGED,
     ZELDA,
+)
+from .knowledgebase import (
+    CTD_CHEMICALS_DICTIONARY,
+    CTD_DISEASES_DICTIONARY,
+    NCBI_GENE_HUMAN_DICTIONARY,
+    NCBI_TAXONOMY_DICTIONARY,
+    HunerEntityLinkingDictionary,
+    KnowledgebaseLinkingDictionary,
 )
 
 # Expose all relation extraction datasets
@@ -321,6 +321,7 @@ __all__ = [
     "SentenceDataset",
     "MongoDataset",
     "StringDataset",
+    "KnowledgebaseLinkingDictionary",
     "ANAT_EM",
     "AZDZ",
     "BC2GM",
@@ -347,6 +348,7 @@ __all__ = [
     "FSU",
     "GELLUS",
     "GPRO",
+    "HunerEntityLinkingDictionary",
     "HUNER_CELL_LINE",
     "HUNER_CELL_LINE_CELL_FINDER",
     "HUNER_CELL_LINE_CLL",
